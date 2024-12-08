@@ -45,99 +45,62 @@
 
    
     .course-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      
-    }
-
-    .course-card {
-     
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      margin: 10px;
-    }
-
-    .course-card h2 {
-      color: #ff3366;
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-
-    .course-card p {
-      margin: 10px 0;
-      font-size: 16px;
-    }
-
-    .course-card .icon {
-      margin-right: 10px;
-    }
-
-    .course-card .enroll-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #ff3366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-    }
-
-    .course-name {
-      color: #EA2451;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    /* Base styles for course cards */
-.course-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping of course cards */
-    justify-content: space-between; /* Space between cards */
-}
-h1{
-  font-size: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-/* Responsive styles for screens 650px and smaller */
-@media (max-width: 650px) {
-    h1 {
-        font-size: 25px; /* Reduce font size for the header */
-        padding: 10px; /* Adjust padding */
-    }
-    .aaa {
-        font-size: 18px; /* Reduce font size for the header */
-        padding: 10px; /* Adjust padding */
-    }
-
-
-    .course-container {
-      display: flex;
-        flex-direction: column-reverse;
-        justify-content: center; 
-        justify-items: center;
-        text-align: center;
-        margin-left: 80px; /* Center align cards */
-    }
-
-    .course-card {
-      width: 150%; /* Make each card take 90% of the container's width */
-        max-width: 300px; /* Set a maximum width for the cards */
-        margin: 15px 0; /* Add vertical margin for spacing */
-        padding: 20px; /* Increase padding for a larger card */
-        border-radius: 10px; /* Optional: Make corners more rounded */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* Optional: Add shadow for better visibility */
-    }
-
-    .enroll-btn {
-        width: 100%; /* Make the enroll button full width */
-        padding: 10px; /* Adjust padding for the button */
-        font-size: 16px; /* Increase font size for better touch targets */
-    }
+.course-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%; /* Adjust width for desktop screens */
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
 }
+
+.course-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.enroll-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #EA2451;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.enroll-btn:hover {
+  background-color: #c81f45;
+}
+
+@media (max-width: 1024px) {
+  .course-card {
+    width: 45%; /* Adjust width for tablet screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%; /* Full width for mobile screens */
+  }
+}
+
   </style>
   
 
